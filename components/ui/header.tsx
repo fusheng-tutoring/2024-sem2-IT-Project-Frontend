@@ -1,5 +1,5 @@
 // import Link from 'next/link'
-import HeaderLogo from '@/components/ui/header-logo'
+import Logo from '@/components/ui/logo'
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
       <div className="flex items-center justify-between">
 
         <div className="shrink-0 mr-4">
-          <HeaderLogo />
+          <Logo />
         </div>
 
         <nav className="flex grow">
