@@ -19,7 +19,7 @@ export interface SubjectList {
 }
 
 export async function getAllSubjects() {
-  const res = await fetch('https://storage.googleapis.com/unimelb-tutoring/2024-it-project/subject-raw.json')
+  const res = await fetch('https://storage.googleapis.com/teammakapaka/subject-raw.json')
 
   if (!res.ok) throw new Error('failed to fetch data')
 
