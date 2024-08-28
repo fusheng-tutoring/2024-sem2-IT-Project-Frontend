@@ -7,7 +7,7 @@ export default function Sidebar() {
   const [remoteJob, setRemoteJob] = useState<boolean>(false)
 
   return (
-    <aside className="mb-8 md:mb-0 md:w-64 lg:w-72 md:ml-12 lg:ml-20 md:shrink-0 md:order-1">
+    <aside className="mb-8 md:mb-0 md:w-64 lg:w-72 md:mr-12 lg:mr-20 md:shrink-0 md:order-0">
       <div data-sticky="" data-margin-top="32" data-sticky-for="768" data-sticky-wrap="">
         <div className="relative bg-gray-50 rounded-xl border border-gray-200 p-5">
           <div className="absolute top-5 right-5 leading-none">
@@ -15,7 +15,7 @@ export default function Sidebar() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-1 gap-6">
-            {/* Group 1 */}
+
             <div>
               <div className="text-sm text-gray-800 font-semibold mb-3">Job Type</div>
               <ul className="space-y-2">
@@ -51,7 +51,7 @@ export default function Sidebar() {
                 </li>
               </ul>
             </div>
-            {/* Group 2 */}
+
             <div>
               <div className="text-sm text-gray-800 font-semibold mb-3">Job Roles</div>
               <ul className="space-y-2">
@@ -87,7 +87,6 @@ export default function Sidebar() {
                 </li>
               </ul>
             </div>
-            {/* Group 3 */}
             <div>
               <div className="text-sm text-gray-800 font-semibold mb-3">Remote Only</div>
               <div className="flex items-center">
@@ -101,7 +100,6 @@ export default function Sidebar() {
                 <div className="text-sm text-gray-400 italic ml-2">{remoteJob ? 'On' : 'Off'}</div>
               </div>
             </div>
-            {/* Group 3 */}
             <div>
               <div className="text-sm text-gray-800 font-semibold mb-3">Salary Range</div>
               <ul className="space-y-2">
@@ -131,11 +129,10 @@ export default function Sidebar() {
                 </li>
               </ul>
             </div>
-            {/* Group 4 */}
             <div>
               <div className="text-sm text-gray-800 font-semibold mb-3">Location</div>
               <label className="sr-only">Location</label>
-              <select className="form-select w-full">
+              <select title='Location' className="form-select w-full">
                 <option>Anywhere</option>
                 <option>London</option>
                 <option>San Francisco</option>

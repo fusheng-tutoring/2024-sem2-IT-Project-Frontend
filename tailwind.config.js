@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        unimelbBlue: 'rgb(0, 15, 70)',
+      },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
         'nycd': ['var(--font-nycd)', 'cursive'],
