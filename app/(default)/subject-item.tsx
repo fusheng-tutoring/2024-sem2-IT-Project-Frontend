@@ -1,6 +1,7 @@
-import Link from 'next/link'
-import SUBJECT from '@/public/images/subject-loading.png'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
+import { Subject } from '@/components/types';
+import SUBJECT from '@/public/images/subject-loading.png';
 
 export default function SubjectItem({ ...props }: Subject) {
   return (

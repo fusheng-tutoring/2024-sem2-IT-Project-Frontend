@@ -9,8 +9,8 @@
 npm-debug.log*
 
 # local env files
+.env
 .env*.local
-
 
 # typescript
 *.tsbuildinfo
@@ -18,3 +18,8 @@ next-env.d.ts
 
 # contentlayer
 .contentlayer
+
+# firebase settings
+.firebase
+firebase.json
+.firebaserc

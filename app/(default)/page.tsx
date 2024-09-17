@@ -2,9 +2,9 @@ export const metadata = {
   title: 'Search — The University of Melbourne Handbook',
   description: 'Search — The University of Melbourne Handbook',
 }
-import Hero from '@/components/hero'
-import Sidebar from '@/components/sidebar'
-import SubjectsList from './subjects-list'
+import Hero from '@/components/hero';
+import Sidebar from '@/components/sidebar';
+import SubjectsList from './subjects-list';
 
 export default function Home() {
   return (
