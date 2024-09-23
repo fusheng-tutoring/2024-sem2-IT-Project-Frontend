@@ -11,7 +11,7 @@ export default function CSDisplayList() {
 
   return (
     <section className='relative'>
-      <div className="max-w-full w-full flex flex-wrap gap-8 mb-12">
+      <div className="max-w-full flex flex-row gap-8 mb-12">
         <CSSidebar curTab={curTab} setCurTab={setCurTab}/>
         <CSSubjectList curTab={curTab}/>
       </div>

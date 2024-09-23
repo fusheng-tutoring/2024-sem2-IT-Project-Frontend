@@ -10,8 +10,8 @@ export default function CSSubjectList({ curTab }: { curTab: string }) {
   var subjects: CSType[] = (curTab === "Major Structure") ? CORE_SUBJECT : RELATIVE_SUBJECT;
 
   return (
-    <section className="relative">
-      <div className="max-w-7xl mt-12 mx-auto">
+    <section className="relative ml-auto">
+      <div className="max-w-full mt-12 mx-auto">
         <div className='h1 font-bold text-unimelbBlue mb-4'>Subjects</div>
         <div className='w-full flex flex-wrap gap-2'>
           {subjects.map((subject, idx) => (

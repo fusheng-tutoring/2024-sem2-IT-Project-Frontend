@@ -9,10 +9,10 @@ export default function CSSidebar({ curTab, setCurTab }: { curTab: string, setCu
   }
 
   return (
-    <aside className='mt-12'>
+    <aside className='mt-12 w-full'>
       <div data-sticky="" data-margin-top="32" data-sticky-for="768" data-sticky-wrap="">
-        <div className="relative rounded-xl">
-          <ul className="space-y-2 text-unimelbDarkBlue font-bold text-2xl">
+        <div className="relative rounded-xl mr-12">
+          <ul className="space-y-2 text-unimelbDarkBlue font-bold text-2xl mr-auto">
             {SUBJECT_TAB.map((tab, idx) => (
               <li key={idx} className={`px-8 pr-12 py-2 ${tab === curTab ? "bg-tabGreen" : "bg-white"}`}>
                 <button type='button' onClick={settingTab}>{tab}</button>
