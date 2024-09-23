@@ -1,3 +1,23 @@
+export type CourseType = {
+  category: string;
+  title: string;
+  location: string;
+  points: string;
+  intake: string;
+  fields: string[];
+  mode: string;
+  link: string;
+}
+
+export type CSType = {
+  name: string,
+  code: string,
+  offeredSemesters: string[],
+  level: string,
+  creditPoints: number,
+  requisites: boolean
+}
+
 export type CoursePreview = {
   complete_credit: string,
   courseOfferingTime: string,

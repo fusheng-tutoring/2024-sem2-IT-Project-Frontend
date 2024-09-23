@@ -10,8 +10,11 @@ module.exports = {
       colors: {
         unimielbScienceBlue: "#012A58",
         unimelbTeal: "#003C55",
+        unimelbDarkBlue: "#000B34",
         unimelbBlue: 'rgb(0, 15, 70)',
         scienceCat: "#CAF3DA",
+        tabGreen: '#D5E0D3',
+        requisites: "#ff6f3c",
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],

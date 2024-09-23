@@ -1,14 +1,3 @@
-export interface CourseType {
-  category: string;
-  title: string;
-  location: string;
-  points: string;
-  intake: string;
-  fields: string[];
-  mode: string;
-  link: string;
-}
-
 export const COMP = {
   "category": "Computing",
   "title": "Computing and Software Systems",
@@ -35,6 +24,11 @@ export const TITLES = [
   'With Scholarship',
   'Associated Scholarships'
 ];
+
+export const SUBJECT_TAB = [
+  "Major Structure",
+  "Related Subjects",
+]
 
 export const CORE_SUBJECT = [
   {

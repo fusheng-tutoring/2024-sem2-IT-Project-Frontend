@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { CourseType } from './constant';
+import { CourseType } from './types';
 
 import LOADING_SCIENCE from '@/public/images/science-loading.png';
 import Link from 'next/link';
