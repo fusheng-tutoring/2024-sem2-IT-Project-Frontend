@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        unimelbTeal: "#003C55",
         unimelbBlue: 'rgb(0, 15, 70)',
       },
       fontFamily: {
@@ -26,6 +27,13 @@ module.exports = {
         '5xl': ['3rem', { lineHeight: '1', letterSpacing: '-0.01em' }],
         '6xl': ['3.75rem', { lineHeight: '1', letterSpacing: '-0.01em' }],
         '7xl': ['4.5rem', { lineHeight: '1', letterSpacing: '-0.01em' }],
+      },
+      animation: {
+        'endless': 'endless 20s linear infinite',
+        'shine': 'shine 5s linear 500ms infinite',
+        'float': 'float 2s ease-in-out infinite',
+        'infinite-scroll': 'infinite-scroll 60s linear infinite',
+        'infinite-scroll-inverse': 'infinite-scroll-inverse 60s linear infinite',
       },
       letterSpacing: {
         tighter: '-0.02em',

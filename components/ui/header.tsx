@@ -1,5 +1,5 @@
-// import Link from 'next/link'
-import Logo from '@/components/ui/logo'
+import Link from 'next/link';
+import Logo from '@/components/ui/logo';
 
 export default function Header() {
   return (
@@ -11,13 +11,33 @@ export default function Header() {
         </div>
 
         <nav className="flex grow">
-          {/* <ul className="flex grow justify-end flex-wrap items-center">
+          <ul className="flex grow justify-end flex-wrap items-center">
             <li>
-              <Link className="text-sm font-medium text-indigo-500 hover:underline px-3 lg:px-5 py-2 flex items-center" href="/signin">
-                Sign in
-              </Link>
+              <div className="text-sm font-medium text-white px-3 lg:px-5 py-2 flex items-center">
+                Study with us
+              </div>
             </li>
-          </ul> */}
+            <li>
+              <div className="text-sm font-medium text-white px-3 lg:px-5 py-2 flex items-center">
+                Student life
+              </div>
+            </li>
+            <li>
+              <div className="text-sm font-medium text-white px-3 lg:px-5 py-2 flex items-center">
+                Accommodation
+              </div>
+            </li>
+            <li>
+              <div className="text-sm font-medium text-white px-3 lg:px-5 py-2 flex items-center">
+                Contact and suport
+              </div>
+            </li>
+            <li className='b-2 b-white b-l'>
+              <div className="text-sm font-medium text-white px-3 lg:px-5 py-2 flex items-center">
+                Sign in
+              </div>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>

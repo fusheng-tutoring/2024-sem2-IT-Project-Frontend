@@ -1,6 +1,8 @@
 import './css/style.css'
 
-import { Inter, Nothing_You_Could_Do } from 'next/font/google'
+import { Inter, Nothing_You_Could_Do } from 'next/font/google';
+import Header from '@/components/ui/header';
+import Footer from '@/components/ui/footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,8 +18,8 @@ const nycd = Nothing_You_Could_Do({
 })
 
 export const metadata = {
-  title: 'Search — The University of Melbourne Handbook',
-  description: 'Search — The University of Melbourne Handbook',
+  title: 'The University of Melbourne Handbook',
+  description: 'The University of Melbourne Handbook',
 }
 
 export default function RootLayout({
@@ -29,7 +31,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${nycd.variable} font-inter antialiased bg-white text-gray-800 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
-          {children}
+          <Header />
+          <main className="grow">
+            {children}
+          </main>
+          <Footer />
         </div>
       </body>
     </html>
