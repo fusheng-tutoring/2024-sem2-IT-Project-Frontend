@@ -7,7 +7,7 @@ export default function Header() {
       <div className="flex items-center justify-between">
 
         <div className="shrink-0 mr-4">
-          <Logo />
+          <Logo toggle={false} />
         </div>
 
         <nav className="flex grow">

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="py-8 md:py-12">
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mb-4 md:mb-6">
             <div className="shrink-0 mr-4">
-              <Logo />
+              <Logo toggle={true} />
             </div>
           </div>
 

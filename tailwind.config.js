@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        unimielbScienceBlue: "#012A58",
         unimelbTeal: "#003C55",
         unimelbBlue: 'rgb(0, 15, 70)',
+        scienceCat: "#CAF3DA",
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
