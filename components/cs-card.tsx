@@ -9,7 +9,6 @@ export default function CSCard(CSInfo: CSType) {
   return (
     <div className="w-full bg-white shadow-lg rounded-md border-2 border-gray">
       <div className="flex p-5 h-full">
-        {/* Left section */}
         <div className="flex flex-col grow gap-6">
           <div className="flex flex-1 flex-wrap gap-4">
             <h3 className="text-xl text-gray-800 font-semibold">{CSInfo.name}</h3>
@@ -23,7 +22,6 @@ export default function CSCard(CSInfo: CSType) {
           </div>
         </div>
 
-        {/* Right section */}
         <div className='flex flex-col grow ml-auto justify-between'>
           <div className='flex gap-4 justify-end'>
             <div className="text-md rounded-md p-1 mb-4 border-2 border-requisites text-requisites text-center mb-1">Requisites Apply</div>
