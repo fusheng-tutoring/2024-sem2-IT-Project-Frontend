@@ -15,6 +15,9 @@ module.exports = {
         scienceCat: "#CAF3DA",
         tabGreen: '#D5E0D3',
         requisites: "#ff6f3c",
+        subjectSidebar: '#EDF2F5',
+        smallTabBlue: '#35659E',
+        subjectBackground: "#0058A6",
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],

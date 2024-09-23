@@ -3,6 +3,7 @@
 import React from 'react';
 
 import { CSType } from './types';
+import Link from 'next/link';
 
 
 export default function CSCard(CSInfo: CSType) {
@@ -11,7 +12,7 @@ export default function CSCard(CSInfo: CSType) {
       <div className="flex p-5 h-full">
         <div className="flex flex-col grow gap-6">
           <div className="flex flex-1 flex-wrap gap-4">
-            <h3 className="text-xl text-gray-800 font-semibold">{CSInfo.name}</h3>
+            <Link href="/subject" className="text-xl text-gray-800 font-semibold">{CSInfo.name}</Link>
             <div className="text-sm mt-2">{CSInfo.code}</div>
           </div>
           <div className='flex flex-1'>
