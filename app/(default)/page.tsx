@@ -11,7 +11,7 @@ import Achievement from './home-section/achievement';
 export default function Home() {
   return (
     <div>
-      <div className="py-8 md:py-16">
+      <div className="pt-8 md:pt-16">
         <div className="md:flex md:justify-between">
           <div className="md:grow">
             <Above />
