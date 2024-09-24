@@ -32,15 +32,10 @@ export default function ChatbotModal({
 
   return (
     <>
-      <div
-        className={`fixed inset-0 bg-black transition-opacity duration-300 ease-in-out ${isOpen ? 'bg-opacity-50' : 'bg-opacity-0 pointer-events-none'
-          } z-40`}
-        onClick={() => setIsOpen(false)}
-      />
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setIsOpen(false)} />
       <div
         ref={modalRef}
-        className={`fixed bottom-0 right-0 w-100 h-96 bg-white shadow-lg rounded-tl-lg flex flex-col z-50 transition-all duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
+        className="fixed bottom-0 right-0 w-100 h-96 bg-white shadow-lg rounded-tl-lg flex flex-col z-50"
       >
         <div className="flex items-center justify-between bg-unimelbBlue text-white p-2 px-6">
           <Image className="w-12 h-auto" priority src={UNIMELB} alt="Unimelb" />
