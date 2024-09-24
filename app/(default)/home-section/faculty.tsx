@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 // Import Images
-import SCIENCE from '@/public/images/science-0.png';
 import UNIMELB_MAIN from '@/public/images/unimelb-main.png';
 import UNIMELB_OTHERS from '@/public/images/unimelb-others.png';
 
