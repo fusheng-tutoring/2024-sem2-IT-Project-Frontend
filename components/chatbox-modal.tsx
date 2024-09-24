@@ -59,7 +59,6 @@ export default function ChatbotModal({
               Hi there! What can I help you with?
             </div>
           </div>
-          {/* More messages can be added here */}
         </div>
 
         <div className="p-4 border-t">
