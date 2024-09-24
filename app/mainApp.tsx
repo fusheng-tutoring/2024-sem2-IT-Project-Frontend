@@ -1,8 +1,7 @@
 'use client'
 
-import { useEffect } from 'react'
-
-const Sticky = require('sticky-js')
+import { useEffect } from 'react';
+const Sticky = require('sticky-js');
 
 export default function MainApp({
   children,

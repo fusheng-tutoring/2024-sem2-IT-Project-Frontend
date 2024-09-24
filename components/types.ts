@@ -40,4 +40,9 @@ export type StudyArea = {
   description: string;
   categories: string[];
   subjects: number;
-};  
+}; 
+
+export interface ModalProps {
+  isOpen: boolean
+  setIsOpen: (value: boolean) => void
+}

@@ -48,11 +48,21 @@ export default function Subject() {
         </div>
 
         <div className='mb-16 flex justify-between mx-16'>
-          <Link className='p-4 rounded-md text-unimelbScienceBlue border-2 border-unimelbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003" target="_blank" rel="noopener">
-            Prev: Overview
+          <Link className='inline-flex justify-between p-4 rounded-md text-unimelbScienceBlue border-2 border-unimelbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003" target="_blank" rel="noopener">
+            <svg className="fill-current mx-3 my-auto rotate-180" width="16" height="16" viewBox="0 0 16 16">
+              <path d="M6.6 13.4L5.2 12l4-4-4-4 1.4-1.4L12 8z" />
+            </svg>
+            <span>
+              Prev: Overview
+            </span>
           </Link>
-          <Link className='p-4 rounded-md text-unimelbScienceBlue border-2 border-unimelbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003/assessment" target="_blank" rel="noopener">
-            Next: Assessment
+          <Link className='inline-flex justify-between p-4 rounded-md text-unimelbScienceBlue border-2 border-unimelbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003/assessment" target="_blank" rel="noopener">
+            <span>
+              Next: Assessment
+            </span>
+            <svg className="fill-current mx-3 my-auto" width="16" height="16" viewBox="0 0 16 16">
+              <path d="M6.6 13.4L5.2 12l4-4-4-4 1.4-1.4L12 8z" />
+            </svg>
           </Link>
         </div>
 

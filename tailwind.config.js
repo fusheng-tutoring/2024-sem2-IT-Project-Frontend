@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        messageBackgroundColor: "#CBE8EF",
         unimelbScienceBlue: "#012A58",
         unimelbTeal: "#003C55",
         unimelbDarkBlue: "#000B34",

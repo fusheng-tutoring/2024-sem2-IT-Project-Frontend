@@ -5,6 +5,8 @@ import Header from '@/components/ui/header';
 import Footer from '@/components/ui/footer';
 import MainApp from './mainApp';
 
+import ChatBot from '@/components/chatbox/chatbot';
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -37,6 +39,7 @@ export default function RootLayout({
             {children}
           </MainApp>
           <Footer />
+          <ChatBot />
         </div>
       </body>
     </html>
