@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function SubjectSidebar() {
   return (
-    <aside className='relative py-16 bg-subjectSidebar pl-52 pr-12'>
+    <aside className='relative py-16 bg-subjectSidebar pl-24 pr-12'>
       <div className="rounded-xl pb-24">
         <h3 className='h4 text-black mb-8 text-center'>About this subject</h3>
         <ul className="text-left space-y-6 text-smallTabBlue text-lg pr-12">
