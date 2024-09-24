@@ -1,3 +1,5 @@
+export const SUBLINKS = ["About Us", "Careers at Melbourne", "Safety and respect", "Newsroom", "Contact"]
+
 export const COMP = {
   "category": "Computing",
   "title": "Computing and Software Systems",
