@@ -13,7 +13,7 @@ export default function SubjectSidebar() {
             <li className='pl-4'>
               <Link className='hover:underline' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003" target="_blank" rel="noopener">Overview</Link>
             </li>
-            <li className='bg-white py-2 pl-4 border-l-4 border-unimelbScienceBlue overflow-hidden'>
+            <li className='bg-white py-2 pl-4 pr-10 border-l-4 border-unimelbScienceBlue overflow-hidden'>
               <Link className='hover:underline block whitespace-nowrap overflow-hidden text-ellipsis' href="/subject">Eligibility and requirements</Link>
             </li>
             <li className='pl-4'>
