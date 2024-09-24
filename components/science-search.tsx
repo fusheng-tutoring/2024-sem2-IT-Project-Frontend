@@ -4,7 +4,7 @@ import { TITLES } from './constant';
 
 export default function ScienceSearch() {
   return (
-    <section className='relative bg-unimielbScienceBlue'>
+    <section className='relative bg-unimelbScienceBlue'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative my-8 py-4">
 
         <h3 className='h3 text-white mb-4'>

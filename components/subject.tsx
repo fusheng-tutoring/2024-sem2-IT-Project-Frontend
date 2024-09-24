@@ -1,7 +1,10 @@
 'use client'
 
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+
+import TEMP_TREE_DIAGRAM from '@/public/images/tre-diagram.jpeg';
 
 export default function Subject() {
 
@@ -18,6 +21,7 @@ export default function Subject() {
 
           <div className='h5 mb-8'>Option 2</div>
           {/* Diagram */}
+          <Image className='w-full h-auto' src={TEMP_TREE_DIAGRAM} alt='Unimelb-Subject' priority></Image>
 
           <div className='h4 mb-8'>Corequisites</div>
           <div className='h5 mb-8'>None</div>
@@ -28,7 +32,7 @@ export default function Subject() {
               The University of Melbourne is committed to providing students with reasonable
               adjustments to assessment and participation under the Disability Standards
               for Education (2005), and the
-              <Link className='text-unimielbScienceBlue underline hover:no-underline' href="https://policy.unimelb.edu.au/MPF1326/#section-4.30" target="_blank" rel="noopener">
+              <Link className='text-unmielbScienceBlue underline hover:no-underline' href="https://policy.unimelb.edu.au/MPF1326/#section-4.30" target="_blank" rel="noopener">
                 Assessment and Results Policy (MPF1326)
               </Link>.
               Students are expected to meet the core participation requirements
@@ -38,16 +42,16 @@ export default function Subject() {
 
             <div className='mb-16'>
               Further details on how to seek academic adjustments can be found on the Student
-              Equity and Disability Support website: <Link className='text-unimielbScienceBlue underline hover:no-underline' href="http://services.unimelb.edu.au/student-equity/home" target="_blank" rel="noopener">http://services.unimelb.edu.au/student-equity/home</Link>
+              Equity and Disability Support website: <Link className='text-unimelbScienceBlue underline hover:no-underline' href="http://services.unimelb.edu.au/student-equity/home" target="_blank" rel="noopener">http://services.unimelb.edu.au/student-equity/home</Link>
             </div>
           </div>
         </div>
 
         <div className='mb-16 flex justify-between mx-16'>
-          <Link className='p-4 rounded-md text-unimielbScienceBlue border-2 border-unimielbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003" target="_blank" rel="noopener">
+          <Link className='p-4 rounded-md text-unimelbScienceBlue border-2 border-unimelbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003" target="_blank" rel="noopener">
             Prev: Overview
           </Link>
-          <Link className='p-4 rounded-md text-unimielbScienceBlue border-2 border-unimielbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003/assessment" target="_blank" rel="noopener">
+          <Link className='p-4 rounded-md text-unimelbScienceBlue border-2 border-unimelbScienceBlue' href="https://handbook.unimelb.edu.au/2024/subjects/comp20003/assessment" target="_blank" rel="noopener">
             Next: Assessment
           </Link>
         </div>

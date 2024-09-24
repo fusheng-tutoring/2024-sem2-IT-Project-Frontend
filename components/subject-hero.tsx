@@ -10,7 +10,7 @@ export default function SubjectHero() {
     <section className="relative bg-subjectBackground">
       <div className="max-w-full text-left px-4 sm:px-6 relative">
         <div className="relative pt-12">
-          <div className="max-8xl text-white text-left pb-12 ml-12 my-6">
+          <div className="max-8xl text-white text-left pb-12 ml-12 mt-6">
             <div className="flex justify-around items-start">
               <div>
                 <h1 className="h3 font-bold mb-4 py-4">Algorithms and Data Structures (COMP20003)</h1>

@@ -10,9 +10,9 @@ export default function Science() {
   return (
     <>
       <section className='relative'>
-        <div className="max-w-8xl mx-auto">
+        <div className="max-w-8xl mx-auto" data-sticky-container>
           <div className="pt-16">
-            <div className="flex justify-between" data-sticky-container>
+            <div className="flex justify-between">
               <div className="grow">
                 <SubjectHero />
                 <SubejctDisplay />

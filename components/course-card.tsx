@@ -44,7 +44,7 @@ export default function CourseCard(courseInfo: CourseType) {
           <div className="grow">
             <header className="my-2">
               <h3 className="text-md mb-4 text-gray-800 font-semibold mb-1">Full / Part Time Course</h3>
-              <Link href={courseInfo.link} className='btn text-white w-full rounded-md bg-unimielbScienceBlue'>Learn More</Link>
+              <Link href={courseInfo.link} className='btn text-white w-full rounded-md bg-unimelbScienceBlue'>Learn More</Link>
             </header>
           </div>
         </div>
