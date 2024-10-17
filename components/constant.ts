@@ -1,4 +1,4 @@
-export const BACKEND_URL = "http://localhost:8080/api/v1" // "https://itproject-445142043176.australia-southeast2.run.app/api/v1"
+export const BACKEND_URL = "https://itproject-445142043176.australia-southeast2.run.app/api/v1"
 export const NO_JWT_NEEDED = true;
 
 export const SUBLINKS = ["About Us", "Careers at Melbourne", "Safety and respect", "Newsroom", "Contact"]
