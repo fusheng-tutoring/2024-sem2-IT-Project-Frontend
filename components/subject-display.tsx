@@ -1,7 +1,7 @@
 'use client'
 
 import SubjectSidebar from './subject-sidebar';
-import SubjectContent from './subjectContent';
+import SubjectContent from './subject-content';
 
 import { Subject } from './types';
 

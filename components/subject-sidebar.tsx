@@ -8,7 +8,7 @@ import LoadingSpinner from './loading';
 
 export default function SubjectSidebar({ getLoading, getData }: { getLoading: boolean, getData: Subject }) {
   return (
-    <aside className='relative py-16 bg-subjectSidebar pl-52 pr-12 shrink-0 order-0 mb-0 mt-0'>
+    <aside className='relative py-16 bg-subjectSidebar pl-52 pr-12 shrink-0 order-0 mb-0 mt-0 w-1/3'>
       <div data-sticky="" data-margin-top="32" data-sticky-for="768" data-sticky-wrap="">
         <div className='pb-24'>
           <h3 className='h4 text-black mb-8 text-center'>About this subject</h3>
