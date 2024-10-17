@@ -5,14 +5,18 @@ import React from 'react';
 import { MajorType } from './types';
 import Link from 'next/link';
 
-
 export default function MajorCard(MajorInfo: MajorType) {
+
+  function handleClick() {
+    localStorage.setItem("subjectCode", MajorInfo.subjectPreviewCode);
+  }
+
   return (
     <div className="w-full bg-white shadow-lg rounded-md border-l-8 border-blue-100">
       <div className="flex p-5 h-full">
         <div className="flex flex-col grow gap-6">
           <div className="flex flex-1 flex-wrap gap-4">
-            <Link href="/subject" className="text-xl text-gray-800 font-semibold">{MajorInfo.subjectPreviewName}</Link>
+            <Link onClick={handleClick} href="/subject" className="text-xl text-gray-800 font-semibold">{MajorInfo.subjectPreviewName}</Link>
             <div className="text-sm mt-2">{MajorInfo.subjectPreviewCode}</div>
           </div>
           <div className='flex flex-1'>

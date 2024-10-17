@@ -1,4 +1,5 @@
-export const BACKEND_URL = "https://itproject-445142043176.australia-southeast2.run.app/api/v1"
+export const BACKEND_URL = "http://localhost:8080/api/v1" // "https://itproject-445142043176.australia-southeast2.run.app/api/v1"
+export const NO_JWT_NEEDED = true;
 
 export const SUBLINKS = ["About Us", "Careers at Melbourne", "Safety and respect", "Newsroom", "Contact"]
 
@@ -12,6 +13,17 @@ export const MAJOR_CONVERTOR: Record<string, string> = {
   "physics": "Physics",
   "psychology": "Psychology",
 }
+
+export const MAJOR_COLLECTION = [          
+  "chemistry",         
+  "computer-science",                
+  "data-science",        
+  "electrical-engineering", 
+  "mathematics",        
+  "mechanical-engineering",
+  "physics",        
+  "psychology"    
+];
 
 export const MAJOR_TITLE_CONVERTOR: Record<string, string> = {
   "chemistry": "Chemistry",
@@ -164,77 +176,3 @@ export const SUBJECT_TAB = [
   "Related Subjects",
 ]
 
-export const MAJOR_HOLDING = [
-  {
-    "_id": "670be797373421a5ec26e24f",
-    "subjectPreviewField": "Chemistry",
-    "subjectPreviewName": "Chemistry 1",
-    "subjectPreviewCode": "CHEM10003",
-    "subjectPreviewLevel": "Level 1",
-    "subjectPreviewOfferedSemesters": [
-      "Semester 1",
-      "Semester 2",
-      "2024"
-    ],
-    "subjectPreviewCreditPoints": 12.5,
-    "subjectPreviewRequisites": true
-  },
-  {
-    "_id": "670be797373421a5ec26e250",
-    "subjectPreviewField": "Chemistry",
-    "subjectPreviewName": "Chemistry 2",
-    "subjectPreviewCode": "CHEM10004",
-    "subjectPreviewLevel": "Level 1",
-    "subjectPreviewOfferedSemesters": [
-      "Summer Term",
-      "Semester 2",
-      "2024"
-    ],
-    "subjectPreviewCreditPoints": 12.5,
-    "subjectPreviewRequisites": false
-  },
-  {
-    "_id": "670be797373421a5ec26e251",
-    "SubjectPreviewField": "Chemistry",
-    "subjectPreviewName": "Calculus 2",
-    "subjectPreviewCode": "MAST10006",
-    "subjectPreviewLevel": "Level 1",
-    "subjectPreviewOfferedSemesters": [
-      "Summer Term",
-      "Semester 1",
-      "Semester 2",
-      "2024"
-    ],
-    "subjectPreviewCreditPoints": 12.5,
-    "subjectPreviewRequisites": true
-  },
-  {
-    "_id": "670be797373421a5ec26e252",
-    "SubjectPreviewField": "Chemistry",
-    "subjectPreviewName": "Linear Algebra",
-    "subjectPreviewCode": "MAST10007",
-    "subjectPreviewLevel": "Level 1",
-    "subjectPreviewOfferedSemesters": [
-      "Summer Term",
-      "Semester 1",
-      "Semester 2",
-      "2024"
-    ],
-    "subjectPreviewCreditPoints": 12.5,
-    "subjectPreviewRequisites": true
-  },
-  {
-    "_id": "670be797373421a5ec26e253",
-    "SubjectPreviewField": "Chemistry",
-    "subjectPreviewName": "Today's Science, Tomorrow's World",
-    "subjectPreviewCode": "SCIE10005",
-    "subjectPreviewLevel": "Level 1",
-    "subjectPreviewOfferedSemesters": [
-      "Semester 1",
-      "Semester 2",
-      "2024"
-    ],
-    "subjectPreviewCreditPoints": 12.5,
-    "subjectPreviewRequisites": false
-  },
-]

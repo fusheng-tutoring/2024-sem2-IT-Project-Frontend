@@ -4,9 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import { Subject } from './types';
 import TEMP_TREE_DIAGRAM from '@/public/images/tre-diagram.jpeg';
 
-export default function Subject() {
+export default function SubjectContent({ getLoading, getData }: { getLoading: boolean, getData: Subject }) {
 
   return (
     <section className="relative flex-1">

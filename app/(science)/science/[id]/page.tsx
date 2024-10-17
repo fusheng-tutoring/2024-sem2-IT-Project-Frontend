@@ -1,6 +1,6 @@
-
 import MajorHero from "@/components/major-hero"
 import MajorDisplayList from "@/components/major-display-list";
+import { MAJOR_COLLECTION } from "@/components/constant";
 
 export const metadata = {
   title: 'Major Lists — The University of Melbourne Handbook',
@@ -9,17 +9,8 @@ export const metadata = {
 
 export async function generateStaticParams() {
   try {
-    const degrees = [          
-      "chemistry",         
-      "computer-science",                
-      "data-science",        
-      "electrical-engineering", 
-      "mathematics",        
-      "mechanical-engineering",
-      "physics",        
-      "psychology"    
-    ];
-    return degrees.map((degree: string) => ({
+    
+    return MAJOR_COLLECTION.map((degree: string) => ({
       id: degree,
     }));
 

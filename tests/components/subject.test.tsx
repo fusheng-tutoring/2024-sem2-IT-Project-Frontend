@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import Subject from '../../components/subject';
+import Subject from '../../components/subjectContent';
 
 // Mock the next/image component
 vi.mock('next/image', () => ({

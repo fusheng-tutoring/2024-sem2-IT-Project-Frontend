@@ -1,14 +1,16 @@
 'use client'
 
 import SubjectSidebar from './subject-sidebar';
-import Subject from './subject';
+import SubjectContent from './subjectContent';
 
-export default function SubejctDisplay() {
+import { Subject } from './types';
+
+export default function SubejctDisplay({ getLoading, getData }: { getLoading: boolean, getData: Subject }) {
   return (
     <section className="relative">
       <div className="flex flex-row">
-        <SubjectSidebar />
-        <Subject />
+        <SubjectSidebar getData={(getData as Subject)} getLoading={getLoading} />
+        <SubjectContent getData={(getData as Subject)} getLoading={getLoading} />
       </div>
     </section>
   )

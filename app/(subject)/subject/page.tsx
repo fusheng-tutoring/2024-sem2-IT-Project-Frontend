@@ -1,10 +1,9 @@
 export const metadata = {
-  title: 'Algorithms and Data Structures — The University of Melbourne Handbook',
-  description: 'Algorithms and Data Structures — The University of Melbourne Handbook',
+  title: 'Subject Overview',
+  description: 'The University of Melbourne Handbook',
 }
 
-import SubejctDisplay from "@/components/subject-display"
-import SubjectHero from "@/components/subject-hero"
+import SubjectContainer from "@/components/subject-container";
 
 export default function Science() {
   return (
@@ -12,12 +11,7 @@ export default function Science() {
       <section className='relative'>
         <div className="max-w-8xl mx-auto" data-sticky-container>
           <div className="pt-16">
-            <div className="flex justify-between">
-              <div className="grow">
-                <SubjectHero />
-                <SubejctDisplay />
-              </div>
-            </div>
+            <SubjectContainer />
           </div>
         </div>
       </section>
