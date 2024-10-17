@@ -1,18 +1,21 @@
 ## IT Project Frontend
 
 ## Step 1: Set Up Firebase
+
 ```bash
 # Install the firebase CLI
 npm install -g firebase-tools
 ```
 
 ## Step 2: Log In
+
 ```bash
 # Log In firebase account
 firebase login
 ```
 
 ## Step 3: Firebase Initialisation
+
 ```bash
 firebase init
 
@@ -21,6 +24,7 @@ firebase init
 ```
 
 ## Step 4: Create The Project Base
+
 ```bash
 # Use an existing project => Select
 # What do you want to use as your public directory? => out
@@ -30,6 +34,7 @@ firebase init
 ```
 
 ## Step 5: Deployment
+
 ```bash
 # Set up the out put folder by building them
 npm run build
@@ -37,3 +42,6 @@ npm run build
 # Deploy to Firebase
 firebase deploy
 ```
+
+## Backend Fetching
+Using Axios to fetch data from backend server: https://itproject-445142043176.australia-southeast2.run.app

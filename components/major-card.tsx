@@ -2,22 +2,22 @@
 
 import React from 'react';
 
-import { CSType } from './types';
+import { MajorType } from './types';
 import Link from 'next/link';
 
 
-export default function CSCard(CSInfo: CSType) {
+export default function MajorCard(MajorInfo: MajorType) {
   return (
     <div className="w-full bg-white shadow-lg rounded-md border-l-8 border-blue-100">
       <div className="flex p-5 h-full">
         <div className="flex flex-col grow gap-6">
           <div className="flex flex-1 flex-wrap gap-4">
-            <Link href="/subject" className="text-xl text-gray-800 font-semibold">{CSInfo.name}</Link>
-            <div className="text-sm mt-2">{CSInfo.code}</div>
+            <Link href="/subject" className="text-xl text-gray-800 font-semibold">{MajorInfo.subjectPreviewName}</Link>
+            <div className="text-sm mt-2">{MajorInfo.subjectPreviewCode}</div>
           </div>
           <div className='flex flex-1'>
             Offered&nbsp;
-            {CSInfo.offeredSemesters.map((sem, index) => (
+            {MajorInfo.subjectPreviewOfferedSemesters.map((sem, index) => (
               <div key={index} className='text-slate-800'>{sem}</div>
             ))}
           </div>
@@ -29,8 +29,8 @@ export default function CSCard(CSInfo: CSType) {
             <div className="text-md rounded-md p-1 mb-4 border-2 border-blue text-unimielbBlue text-center mb-1">Subject</div>
           </div>
           <div className='flex justify-end'>
-            <div className='text-gray'>{CSInfo.level}</div>
-            <div className='text-gray'>, {CSInfo.creditPoints} credit points</div>
+            <div className='text-gray'>{MajorInfo.subjectPreviewLevel}</div>
+            <div className='text-gray'>, {MajorInfo.subjectPreviewCreditPoints} credit points</div>
           </div>
         </div>
       </div>

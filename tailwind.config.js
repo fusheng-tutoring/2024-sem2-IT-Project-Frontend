@@ -52,7 +52,7 @@ module.exports = {
         wide: '0.01em',
         wider: '0.02em',
         widest: '0.4em',
-      },
+      }
     },
   },
   plugins: [

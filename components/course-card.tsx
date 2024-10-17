@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export default function CourseCard(courseInfo: CourseType) {
   return (
-    <div className="col-span-2 bg-white shadow-sm rounded-xl overflow-hidden border-2 border-gray">
+    <div className="col-span-1 bg-white shadow-sm rounded-xl overflow-hidden border-2 border-gray">
       <div className="flex flex-col h-full">
 
         <div className="relative">

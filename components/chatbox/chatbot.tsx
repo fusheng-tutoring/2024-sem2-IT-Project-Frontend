@@ -16,7 +16,7 @@ export default function ChatBot() {
         <button
           title='Chat BOT'
           type='button'
-          className="fixed right-4 top-1/3 transform -translate-y-1/3 z-50 cursor-pointer transition-opacity duration-300"
+          className="fixed right-4 bottom-4 z-50 cursor-pointer transition-opacity duration-300"
           onClick={() => { setIsModalOpen(!isModalOpen) }}
         >
           <Image

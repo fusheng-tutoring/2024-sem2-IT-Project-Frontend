@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { SUBJECT_TAB } from './constant';
 
-export default function CSSidebar({ curTab, setCurTab }: { curTab: string, setCurTab: Dispatch<SetStateAction<string>> }) {
+export default function MajorSidebar({ curTab, setCurTab }: { curTab: string, setCurTab: Dispatch<SetStateAction<string>> }) {
 
   function settingTab(e: React.MouseEvent<HTMLButtonElement>) {
     const selectedTab = e.currentTarget.innerText;
@@ -9,13 +9,13 @@ export default function CSSidebar({ curTab, setCurTab }: { curTab: string, setCu
   }
 
   return (
-    <aside className='mt-12 w-full'>
+    <aside className="w-1/5 mr-8">
       <div data-sticky="" data-margin-top="32" data-sticky-for="768" data-sticky-wrap="">
-        <div className="relative rounded-xl mr-12">
-          <ul className="space-y-2 text-unimelbDarkBlue font-bold text-2xl mr-auto">
+        <div className="relative rounded-xl">
+          <ul className="space-y-2 text-unimelbDarkBlue font-bold text-2xl">
             {SUBJECT_TAB.map((tab, idx) => (
               <li key={idx} className={`px-8 pr-12 py-2 ${tab === curTab ? "bg-tabGreen" : "bg-white"}`}>
-                <button type='button' onClick={settingTab}>{tab}</button>
+                <button type="button" onClick={settingTab}>{tab}</button>
               </li>
             ))}
           </ul>

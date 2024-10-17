@@ -1,21 +1,153 @@
+export const BACKEND_URL = "https://itproject-445142043176.australia-southeast2.run.app/api/v1"
+
 export const SUBLINKS = ["About Us", "Careers at Melbourne", "Safety and respect", "Newsroom", "Contact"]
 
-export const COMP = {
-  "category": "Computing",
-  "title": "Computing and Software Systems",
-  "location": "Parkville Campus",
-  "points": "300 points",
-  "intake": "Sem 1 / Sem 2 Intake",
-  "fields": [
-    "Computer Science",
-    "Information Systems",
-    "Information Technology",
-    "Data Science",
-    "Software Engineering"
-  ],
-  "mode": "Full / Part Time Course",
-  "link": "cs"
+export const MAJOR_CONVERTOR: Record<string, string> = {
+  "chemistry": "Chemistry",
+  "computer-science": "Computer Science",
+  "data-science": "Data Science",
+  "electrical-engineering": "Electrical Engineering",
+  "mathematics": "Mathematics",
+  "mechanical-engineering": "Mechanical Engineering",
+  "physics": "Physics",
+  "psychology": "Psychology",
 }
+
+export const MAJOR_TITLE_CONVERTOR: Record<string, string> = {
+  "chemistry": "Chemistry",
+  "computer-science": "Computer and Software Systems",
+  "data-science": "Data Science",
+  "electrical-engineering": "Electrical Engineering",
+  "mathematics": "Mathematics",
+  "mechanical-engineering": "Mechanical Engineering",
+  "physics": "Physics",
+  "psychology": "Psychology",
+}
+
+export const MAJORS = [
+  {
+    "category": "Computing",
+    "title": "Computing and Software Systems",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Computer Science",
+      "Information Systems",
+      "Information Technology",
+      "Data Science",
+      "Software Engineering"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "computer-science"
+  },
+  {
+    "category": "Science",
+    "title": "Chemistry",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Organic Chemistry",
+      "Inorganic Chemistry",
+      "Physical Chemistry",
+      "Biochemistry"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "chemistry"
+  },
+  {
+    "category": "Computing",
+    "title": "Data Science",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Big Data",
+      "Machine Learning",
+      "Statistical Analysis",
+      "Data Visualization"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "data-science"
+  },
+  {
+    "category": "Engineering",
+    "title": "Electrical Engineering",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Power Systems",
+      "Communication Systems",
+      "Signal Processing",
+      "Electronics"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "electrical-engineering"
+  },
+  {
+    "category": "Science",
+    "title": "Mathematics",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Algebra",
+      "Calculus",
+      "Statistics",
+      "Applied Mathematics"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "mathematics"
+  },
+  {
+    "category": "Engineering",
+    "title": "Mechanical Engineering",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Thermodynamics",
+      "Fluid Mechanics",
+      "Mechanics of Materials",
+      "Robotics"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "mechanical-engineering"
+  },
+  {
+    "category": "Science",
+    "title": "Physics",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Quantum Mechanics",
+      "Astrophysics",
+      "Thermodynamics",
+      "Optics"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "physics"
+  },
+  {
+    "category": "Science",
+    "title": "Psychology",
+    "location": "Parkville Campus",
+    "points": "300 points",
+    "intake": "Sem 1 / Sem 2 Intake",
+    "fields": [
+      "Cognitive Psychology",
+      "Behavioral Science",
+      "Neuropsychology",
+      "Social Psychology"
+    ],
+    "mode": "Full / Part Time Course",
+    "link": "psychology"
+  }
+]
+
 
 export const TITLES = [
   'Qualification Type',
@@ -32,224 +164,77 @@ export const SUBJECT_TAB = [
   "Related Subjects",
 ]
 
-export const CORE_SUBJECT = [
+export const MAJOR_HOLDING = [
   {
-    "name": "Foundations of Computing",
-    "code": "COMP10001",
-    "offeredSemesters": ["Summer Term, Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 1",
-    "creditPoints": 12.5,
-    "requisites": false
+    "_id": "670be797373421a5ec26e24f",
+    "subjectPreviewField": "Chemistry",
+    "subjectPreviewName": "Chemistry 1",
+    "subjectPreviewCode": "CHEM10003",
+    "subjectPreviewLevel": "Level 1",
+    "subjectPreviewOfferedSemesters": [
+      "Semester 1",
+      "Semester 2",
+      "2024"
+    ],
+    "subjectPreviewCreditPoints": 12.5,
+    "subjectPreviewRequisites": true
   },
   {
-    "name": "Foundations of Algorithms",
-    "code": "COMP10002",
-    "offeredSemesters": ["Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 1",
-    "creditPoints": 12.5,
-    "requisites": true
+    "_id": "670be797373421a5ec26e250",
+    "subjectPreviewField": "Chemistry",
+    "subjectPreviewName": "Chemistry 2",
+    "subjectPreviewCode": "CHEM10004",
+    "subjectPreviewLevel": "Level 1",
+    "subjectPreviewOfferedSemesters": [
+      "Summer Term",
+      "Semester 2",
+      "2024"
+    ],
+    "subjectPreviewCreditPoints": 12.5,
+    "subjectPreviewRequisites": false
   },
   {
-    "name": "Calculus 1",
-    "code": "MAST10005",
-    "offeredSemesters": ["Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 1",
-    "creditPoints": 12.5,
-    "requisites": true
+    "_id": "670be797373421a5ec26e251",
+    "SubjectPreviewField": "Chemistry",
+    "subjectPreviewName": "Calculus 2",
+    "subjectPreviewCode": "MAST10006",
+    "subjectPreviewLevel": "Level 1",
+    "subjectPreviewOfferedSemesters": [
+      "Summer Term",
+      "Semester 1",
+      "Semester 2",
+      "2024"
+    ],
+    "subjectPreviewCreditPoints": 12.5,
+    "subjectPreviewRequisites": true
   },
   {
-    "name": "Calculus 2",
-    "code": "MAST10006",
-    "offeredSemesters": ["Summer Term, Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 1",
-    "creditPoints": 12.5,
-    "requisites": true
+    "_id": "670be797373421a5ec26e252",
+    "SubjectPreviewField": "Chemistry",
+    "subjectPreviewName": "Linear Algebra",
+    "subjectPreviewCode": "MAST10007",
+    "subjectPreviewLevel": "Level 1",
+    "subjectPreviewOfferedSemesters": [
+      "Summer Term",
+      "Semester 1",
+      "Semester 2",
+      "2024"
+    ],
+    "subjectPreviewCreditPoints": 12.5,
+    "subjectPreviewRequisites": true
   },
   {
-    "name": "Linear Algebra",
-    "code": "MAST10007",
-    "offeredSemesters": ["Summer Term, Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 1",
-    "creditPoints": 12.5,
-    "requisites": true
+    "_id": "670be797373421a5ec26e253",
+    "SubjectPreviewField": "Chemistry",
+    "subjectPreviewName": "Today's Science, Tomorrow's World",
+    "subjectPreviewCode": "SCIE10005",
+    "subjectPreviewLevel": "Level 1",
+    "subjectPreviewOfferedSemesters": [
+      "Semester 1",
+      "Semester 2",
+      "2024"
+    ],
+    "subjectPreviewCreditPoints": 12.5,
+    "subjectPreviewRequisites": false
   },
-  {
-    "name": "Algorithms and Data Structures",
-    "code": "COMP20003",
-    "offeredSemesters": ["Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Database Systems",
-    "code": "INFO20003",
-    "offeredSemesters": ["Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Object Oriented Software Development",
-    "code": "SWEN20003",
-    "offeredSemesters": ["Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Design of Algorithms",
-    "code": "COMP20007",
-    "offeredSemesters": ["Semester 1, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Software Modelling and Design",
-    "code": "SWEN30006",
-    "offeredSemesters": ["Semester 1, Semester 2, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "IT Project",
-    "code": "COMP30022",
-    "offeredSemesters": ["Semester 2, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Computer Systems",
-    "code": "COMP30023",
-    "offeredSemesters": ["Semester 1, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Models of Computation",
-    "code": "COMP30026",
-    "offeredSemesters": ["Semester 2, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  }
-]
-
-export const RELATIVE_SUBJECT = [
-  {
-    "name": "Media Computation",
-    "code": "COMP10003",
-    "offeredSemesters": ["Semester 1, 2024"],
-    "level": "Undergraduate Level 1",
-    "creditPoints": 12.5,
-    "requisites": false
-  },
-  {
-    "name": "Statistics",
-    "code": "MAST20005",
-    "offeredSemesters": ["Summer Term", "Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Probability for Statistics",
-    "code": "MAST20006",
-    "offeredSemesters": ["Semester 1, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Intro. to Numerical Computation in C",
-    "code": "COMP20005",
-    "offeredSemesters": ["Semester 1", "Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Elements of Data Processing",
-    "code": "COMP20008",
-    "offeredSemesters": ["Semester 1", "Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Vector Calculus",
-    "code": "MAST20009",
-    "offeredSemesters": ["Semester 1", "Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Real Analysis",
-    "code": "MAST20026",
-    "offeredSemesters": ["Semester 1", "Semester 2, 2024"],
-    "level": "Undergraduate Level 2",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Information Security and Privacy",
-    "code": "INFO30006",
-    "offeredSemesters": ["Semester 2, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Game Design",
-    "code": "INFO30009",
-    "offeredSemesters": ["Semester 1, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Advanced Studies in Computing",
-    "code": "COMP30013",
-    "offeredSemesters": ["Semester 1", "Semester 2, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Graphics and Interaction",
-    "code": "COMP30019",
-    "offeredSemesters": ["Semester 2, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Declarative Programming",
-    "code": "COMP30020",
-    "offeredSemesters": ["Semester 2, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Artificial Intelligence",
-    "code": "COMP30024",
-    "offeredSemesters": ["Semester 1, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  },
-  {
-    "name": "Machine Learning",
-    "code": "COMP30027",
-    "offeredSemesters": ["Semester 1, 2024"],
-    "level": "Undergraduate Level 3",
-    "creditPoints": 12.5,
-    "requisites": true
-  }
 ]
