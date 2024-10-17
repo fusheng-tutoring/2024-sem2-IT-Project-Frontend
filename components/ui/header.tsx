@@ -33,9 +33,9 @@ export default function Header() {
               </div>
             </li>
             <li className='b-2 b-white b-l'>
-              <div className="text-sm font-medium text-white px-3 lg:px-5 py-2 flex items-center">
+              <Link href={"/signin"} className="cursor-pointer text-sm font-medium text-white px-3 lg:px-5 py-2 flex items-center">
                 Sign in
-              </div>
+              </Link>
             </li>
           </ul>
         </nav>

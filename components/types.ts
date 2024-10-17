@@ -67,7 +67,7 @@ export type Extended = {
 };
 
 export type Subject = {
-  _id: string; 
+  _id: string;
   subjectName: string;
   subjectCode: string;
   subjectPrerequisites: PrerequisiteList[];
@@ -75,3 +75,11 @@ export type Subject = {
   createdAt: Date;
   updatedAt: Date;
 };
+
+export interface JwtPayload {
+  Role: string;
+  Email: string;
+  exp: number;
+  iat: number;
+  sub: string;
+}
