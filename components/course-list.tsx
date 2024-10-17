@@ -1,11 +1,13 @@
 import React from 'react'
 import { MAJORS } from '@/components/constant';
 import CourseCard from './course-card';
+import HandbookGuide from './guide';
 
 export default function CourseList() {
   return (
     <section className='relative'>
       <div className='max-w-7xl mx-auto pb-16'>
+        <HandbookGuide />
         <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
           {MAJORS.map((major, index) => (
             <CourseCard

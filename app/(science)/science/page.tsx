@@ -5,7 +5,6 @@ export const metadata = {
 
 import CourseList from '@/components/course-list';
 import ScienceSearch from "@/components/science-search";
-
 export default function Science() {
   return (
     <>
