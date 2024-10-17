@@ -20,6 +20,8 @@ module.exports = {
         smallTabBlue: '#35659E',
         subjectBackground: "#0058A6",
         unimelbFooterBottom: '#000B34',
+        unimelbSignin: "#094183",
+        buttonGreen: "#00875A",
       },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],

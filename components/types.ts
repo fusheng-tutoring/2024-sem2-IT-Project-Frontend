@@ -77,8 +77,8 @@ export type Subject = {
 };
 
 export interface JwtPayload {
-  Role: string;
-  Email: string;
+  role: string;
+  email: string;
   exp: number;
   iat: number;
   sub: string;
